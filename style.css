@@ -1,0 +1,132 @@
+/* ===== General Styling Start ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  margin: 1.25rem 0;
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin: 0 0 1.75rem 0;
+  font-size: 32px;
+  color: hsl(14, 45%, 36%);
+}
+
+h3, span {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  color: hsl(332, 51%, 32%);
+}
+
+ul > li, ol > li {
+  margin: 0 0 0 1.75rem;
+}
+
+ul > li > p, ol > li > p {
+  margin: 1.25rem 0 0 1.75rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px; 
+  margin: 1.5rem auto;
+}
+
+.wrapper {
+  margin: 1.25rem;
+  /* border: 3px solid #ccc; */
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 1.25rem; 
+}
+/* ===== General Styling Start ===== */
+
+/* ===== Header Styling Start ===== */
+#header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+#header > h1, p {
+  margin: 1.75rem 0 0 0;
+}
+/* ===== Header Styling End ===== */
+
+/* ===== Preparation Styling Start ===== */
+#preparation .box {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: hsl(330, 100%, 98%);
+}
+/* ===== Preparation Styling End ===== */
+
+
+
+
+/* Colors */
+.primary-color {
+  color: hsl(14, 45%, 36%);
+}
+
+.secondary-color {
+  color: hsl(332, 51%, 32%);
+}
+
+.neutral-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.neutral-rose-white {
+  color: hsl(330, 100%, 98%);
+}
+
+.neutral-eggshell {
+  color: hsl(30, 54%, 90%);
+}
+
+.neutral-light-grey {
+  color: hsl(30, 18%, 87%);
+}
+
+.neutral-wenge-brown {
+  color: hsl(30, 10%, 34%);
+}
+
+.neutral-dark-charcoal {
+  color: hsl(24, 5%, 18%);
+}
+
+
+/* Responsive media queries */
+@media (max-width: 375px) {
+  /* Adjust styles for mobile devices */
+  .container {
+    padding: 0 10px; /* Adjust side padding for smaller screens */
+  }
+}
