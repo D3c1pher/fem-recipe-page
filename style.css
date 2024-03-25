@@ -1,3 +1,15 @@
+/* ===== Import Start ===== */
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+/* ===== Import End ===== */
+
 /* ===== General Styling Start ===== */
 * {
   margin: 0;
@@ -15,6 +27,7 @@ body {
 
 h1 {
   margin: 1.25rem 0;
+  line-height: 2.5rem;
 }
 
 h1, h2 {
@@ -41,12 +54,41 @@ h3 {
   color: hsl(332, 51%, 32%);
 }
 
-ul > li, ol > li {
-  margin: 0 0 0 1.75rem;
+ul li{
+  position: relative;
+  padding: 0 0 0 2.75rem;
+  line-height: 1.75;
 }
 
-ul > li > p, ol > li > p {
-  margin: 1.25rem 0 0 1.75rem;
+ol li {
+  padding: 0 0 0 2rem;
+  line-height: 1.75;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: hsl(14, 45%, 36%); 
+  border-radius: 50%;
+}
+
+ol li::marker {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0 0 0 1.25rem;
+}
+
+ol {
+  margin: 0 0 0 2.5rem;
 }
 
 .container {
@@ -56,12 +98,11 @@ ul > li > p, ol > li > p {
 }
 
 .wrapper {
-  margin: 1.25rem;
-  /* border: 3px solid #ccc; */
+  margin: 2.5rem 1.25rem;
 }
 
 .divider {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid hsl(30, 18%, 87%);
   margin: 1.25rem; 
 }
 /* ===== General Styling Start ===== */
@@ -80,53 +121,42 @@ ul > li > p, ol > li > p {
 
 /* ===== Preparation Styling Start ===== */
 #preparation .box {
-  padding: 1.25rem;
+  padding: 2.5rem;
   border-radius: 0.75rem;
   background-color: hsl(330, 100%, 98%);
 }
 /* ===== Preparation Styling End ===== */
 
+/* ===== Nutrition Styling Start ===== */
+#nutrition .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.25rem;
+  /* border: 3px solid #ccc; */
+}
 
+#nutrition .nutrient,#nutrition .value {
+  margin-left: 1.25rem;
+}
 
+#nutrition .nutrient {
+  font-weight: 600;
+}
 
-/* Colors */
-.primary-color {
+#nutrition .value {
+  font-weight: 700;
   color: hsl(14, 45%, 36%);
 }
 
-.secondary-color {
-  color: hsl(332, 51%, 32%);
+#nutrition .divider {
+  margin: 1.25rem 0 0 0; 
 }
+/* ===== Nutrition Styling End ===== */
 
-.neutral-white {
-  color: hsl(0, 0%, 100%);
-}
-
-.neutral-rose-white {
-  color: hsl(330, 100%, 98%);
-}
-
-.neutral-eggshell {
-  color: hsl(30, 54%, 90%);
-}
-
-.neutral-light-grey {
-  color: hsl(30, 18%, 87%);
-}
-
-.neutral-wenge-brown {
-  color: hsl(30, 10%, 34%);
-}
-
-.neutral-dark-charcoal {
-  color: hsl(24, 5%, 18%);
-}
-
-
-/* Responsive media queries */
+/* ===== Responsive Media Queries Start ===== */
 @media (max-width: 375px) {
-  /* Adjust styles for mobile devices */
   .container {
-    padding: 0 10px; /* Adjust side padding for smaller screens */
+    padding: 0 0.625rem;
   }
 }
+/* ===== Responsive Media Queries End ===== */
