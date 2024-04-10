@@ -2,6 +2,11 @@
 
 ![Design preview for the Recipe page coding challenge](./design/desktop-preview.jpg)
 
+### Links
+
+- Solution URL: [Github repository](https://github.com/D3c1pher/fem-recipe-page)
+- Live Site URL: [Deployed live site](https://recipe-page-five-woad.vercel.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
