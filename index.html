@@ -2,21 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    
+    <link rel="stylesheet" href="./style.css">
     <title>Frontend Mentor | Recipe page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
   <body>
     <main class="container">
+      <!-- Header Start -->
       <Header id="header" class="wrapper">
         <img src="./assets/images/image-omelette.jpeg" alt="omelette">
         <h1>Simple Omelette Recipe</h1>
@@ -24,10 +17,12 @@
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
         </p>
       </header>
+      <!-- Header End -->
 
+      <!-- Preparation Start -->
       <section id="preparation" class="wrapper">
         <div class="box">
-          <h3>Preparation time</h3>
+          <h2>Preparation time</h2>
           <ul>
             <li>
               <p><span>Total:</span> Approximately 10 minutes</p>
@@ -41,7 +36,9 @@
           </ul>
         </div>
       </section>
-      
+      <!-- Preparation End -->
+
+      <!-- Ingredients Start -->
       <section id="ingredients" class="wrapper">
         <h2>Ingredients</h2>
         <ul>
@@ -62,9 +59,11 @@
           </li>
         </ul>
       </section>
+      <!-- Ingredients End -->
 
       <div class="divider"></div>
-      
+
+      <!-- Instructions Start -->
       <section id="instructions" class="wrapper">
         <h2>Instructions</h2>
         <ol>
@@ -89,9 +88,11 @@
           </li>
         </ol>
       </section>
+      <!-- Instructions End -->
 
       <div class="divider"></div>
-      
+
+      <!-- Nutrition Start -->
       <section id="nutrition" class="wrapper">
         <h2>Nutrition</h2>
         <p>The table below shows nutritional values per serving without the additional fillings.</p>
@@ -122,11 +123,14 @@
           <p class="value">22g</p>
         </div>
       </section>
+      <!-- Nutrition End -->
     </main>
     
-    <div class="attribution">
+    <!-- Attribution Start -->
+    <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.github.com/D3c1pher">Norven Caracas</a>.
-    </div>
+    </footer>
+    <!-- Attribution End -->
   </body>
 </html>
