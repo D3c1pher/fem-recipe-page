@@ -45,11 +45,11 @@ h2 {
   color: hsl(14, 45%, 36%);
 }
 
-h3, span {
+#preparation h2, span {
   font-weight: 600;
 }
 
-h3 {
+#preparation h2 {
   margin: 0 0 1.25rem 0;
   font-size: 24px;
   color: hsl(332, 51%, 32%);
@@ -58,11 +58,13 @@ h3 {
 ul li{
   position: relative;
   padding: 0 0 0 2.75rem;
+  margin: 0.5rem 0 0 0;
   line-height: 1.75;
 }
 
 ol li {
   padding: 0 0 0 2rem;
+  margin: 1rem 0 0 0;
   line-height: 1.75;
 }
 
@@ -106,14 +108,13 @@ ol {
   border-top: 1px solid hsl(30, 18%, 87%);
   margin: 1.25rem; 
 }
-/* ===== General Styling Start ===== */
+/* ===== General Styling End ===== */
 
 /* ===== Header Styling Start ===== */
 #header {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align items horizontally */
-  text-align: left; /* Align text content to the left */
+  align-items: left;
 }
 
 #header img {
@@ -123,7 +124,7 @@ ol {
   margin-bottom: 1.75rem;
 }
 
-#header > h1, #header > p {
+#header h1, #header p {
   margin: 1.75rem 0 0 0;
 }
 /* ===== Header Styling End ===== */
@@ -141,10 +142,11 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1.25rem;
-  /* border: 3px solid #ccc; */
+  padding-top: 1rem;
+  /* border: 3px solid #ccc; */ /* For checking layout */
 }
 
-#nutrition .nutrient,#nutrition .value {
+#nutrition .nutrient, #nutrition .value {
   margin-left: 1.25rem;
 }
 
@@ -169,3 +171,8 @@ ol {
   }
 }
 /* ===== Responsive Media Queries End ===== */
+
+/* ===== FEM Attribution Styling Start ===== */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* ===== FEM Attribution Styling End ===== */
