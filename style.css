@@ -95,9 +95,11 @@ ol {
 }
 
 .container {
-  width: 100%;
-  max-width: 1440px; 
-  margin: 1.5rem auto;
+  --max-width: 1440px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
 }
 
 .wrapper {
